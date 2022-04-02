@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    background-color: rgb(70, 70, 70);
+    font-family: comic sans ms;
+    color: beige;
+}
+
+hr {
+    height: 1px;
+    border-radius: 100%;
+    color: gray;
+    background-color:gray;
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+}
+a:hover {
+    color: beige;
+
+}
+
+
+/*   3   */
+.flex {
+    display: flex;
+    background-color: rgb(70, 70, 70);
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0px 0px 30px 20px black;
+}
+
+.flex div {
+    background-color: rgb(70, 70, 70);
+    color: rgb(70, 70, 70);
+    border-radius: 1px;
+    transition: 0.3s;
+    font-size: 20px;
+    text-align: center;
+    margin: 30px;
+    padding: 3px;
+    width: 15%;
+}
+.flex div:hover {
+    color: beige;
+    background-color: rgb(39, 39, 39);
+}
+
+.flex div img {
+    width: 100%;
+}
+/*   3   */
+
+
+
+/*   1   */
+/*
+Створіть 2 flex-контейнери висотою у 200px, у який додайте 4 елементи –
+довільні зображення, пов’язані одною темою (ширина – 100px або 75px). У
+одному розмістивши їх горизонтально зліва на право по середині контейнера, в
+іншому – горизонтально, але справа на ліво і у нижній частині контейнера.
+ У звіт додайте два скріншоти – повноекранний режим перегляду
+результату та мінімізований (не більше 50%)
+*/
+.flexxx {
+    display: flex;
+}
+
+.flex-left {
+    background-color: bisque;
+    align-items: center;
+    display: flex;
+    margin: 25px;
+    height: 200px;
+    width: 340px;
+}
+.flex-left .elem-1{
+    background-color: rgb(130, 80, 20);
+    margin: 5px;
+    width: 75px;
+    height: 190px;
+}
+.flex-left .elem-2{
+    background-color: rgb(129, 100, 40);
+    margin: 5px;
+    width: 75px;
+    height: 170px;
+}
+.flex-left .elem-3{
+    background-color: rgb(129, 120, 60);
+    margin: 5px;
+    width: 75px;
+    height: 150px;
+}
+.flex-left .elem-4{
+    background-color: rgb(129, 140, 80);
+    margin: 5px;
+    width: 75px;
+    height: 130px;
+}
+
+
+
+.flex-right {
+    background-color: bisque;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    display: flex;
+    margin: 25px;
+    height: 200px;
+    width: 340px;
+}
+.flex-right .elem-1{
+    background-color: rgb(20, 120, 20);
+    margin: 5px;
+    width: 75px;
+    height: 190px;
+}
+.flex-right .elem-2{
+    background-color: rgb(40, 140, 20);
+    margin: 5px;
+    width: 75px;
+    height: 170px;
+}
+.flex-right .elem-3{
+    background-color: rgb(60, 160, 20);
+    margin: 5px;
+    width: 75px;
+    height: 150px;
+}
+.flex-right .elem-4{
+    background-color: rgb(80, 180, 20);
+    margin: 5px;
+    width: 75px;
+    height: 130px;
+}
+/*   1   */
+
+
+
+/*   2   */
+.flex-again {
+    background-color: bisque;
+    display: flex;
+    margin: 25px;
+    height: 200px;
+    width: 340px;
+}
+.flex-again .elem-1{
+    background-color: rgb(121, 20, 130);
+    margin: 5px;
+    flex-grow: 3;
+}
+.flex-again .elem-2{
+    background-color: rgb(121, 20, 150);
+    margin: 5px;
+    flex-grow: 1;
+    align-self: flex-start;
+}
+.flex-again .elem-3{
+    background-color: rgb(121, 20, 170);
+    margin: 5px;
+    flex-grow: 1;
+    align-self: flex-end;
+}
+.flex-again .elem-4{
+    background-color: rgb(121, 20, 190);
+    margin: 5px;
+    flex-grow: 1;
+}
+/*   2   */
+
+/*   nav   */
+.nav {
+    text-align: center;
+    margin-top: 0;
+    background-color: rgb(30, 30, 30);
+    position: fixed;
+    padding: 10px;
+    margin-left: 90%;
+    margin-top: 10px;
+    text-decoration: none;
+    width: 110px;
+    border-radius: 10px;
+}
+.nav a {
+    font-size: 16px;
+    padding: 5px;
+    transition: 0.3s;
+    
+}
+.nav a:hover {
+    background-color: rgb(20, 20, 20);
+    border-radius: 5px;
+}
+/*   nav   */
+
+
+
+
+
+@media (max-width: 1300px) {
+    .flex div {
+        width: 25%;
+    }
+}
+
+@media (max-width: 900px) {
+    .flex div {
+        width: 35%;
+    }
+}
+
+@media (max-width: 600px) {
+    .flex div {
+        width: 75%;
+    }
+}
